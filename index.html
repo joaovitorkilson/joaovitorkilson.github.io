@@ -1,129 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitor Kilson - Desenvolvedor Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@100;300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Front End & UX/UI Designer, Localizado em Barbacena, MG>">
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Vitor Kilson - Desenvolvedor e Designer</title>
-</head>
-
-<body>
-    <header class="header">
-        <img src="img/Vitor_Kilson.svg" alt="vitor kilson" width="306" height="53">
-        <nav>
-            <ul class="header-menu">
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+  </head>
+  <body>
+    <header>
+      
+    <section class="introduction">
+      <div class="container">
+        <div class="header">
+          <h1 class="name-logo">Vitor Kilson</h1>
+  
+          <nav>
+            <ul class="header-menu subtitle-3">
+              <li><a href="">Projetos</a></li>
+              <li><a href="">Cursos</a></li>
+              <li><a href="">Contato</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+
+        <div class="introduction-content">
+          <div class="introduction-image">
+            
+            <picture>
+              <source media="(max-width: 800px)" srcset="./img/introduction/vitor-sm.svg">
+              <source media="(max-width: 1000px)" srcset="./img/introduction/vitor-medium.svg">
+              <img src="./img/introduction/vitor.svg" alt="Ilustração homem de boné dando tchau">
+            </picture>
+          </div>
+          
+          <div class="introduction-info">
+            <h1 class="introduction-h1 title-1">Desenvolvedor<br> Full Stack &<br> UI Designer</h1>
+
+            <ul class="button introduction-button">
+              <li><a href="https://www.linkedin.com/in/joaovitorkilson/" target="_blank" id="linkedin">Linkedin</a></li>
+              <li> <a href="https://github.com/joaovitorkilson" target="_blank" id="github">Github</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     </header>
 
-    <main class="introducao container">
-        <img src="img/vitor.svg" alt="vitor" width="245" height="524">
-        <div>
-            <h1>Desenvolvedor<br> Front End &<br> UI Designer</h1>
-            <p>Localizado em Barbacena, MG</p>
+
+    <main>
+      <section id="projects">
+
+        <div class="container">
+          <div class="projects-content">  
+            <h2 class="title-2 projects-h2"> &#60;projetos&#62; </h2>
+    
+            <p class="projects-p subtitle-4">Desenvolvo projetos como o site institucional do Curso Áquila utilizando <strong>HTML, CSS e JavaScript</strong>. Eu entrego o site totalmente gerenciável com o <strong>CMS Wordpress</strong>.</p>
+
         </div>
+
+        <div class="projects-cards">
+          <div class="project">
+            <div class="img-container">
+              <h3 class="subtitle-4 project-h3">Curso Áquila</h3>
+              <a href="https://www.aquilacursobq.com.br/" target="_blank"><img src="./img/projects/aquila.png" alt="print curso áquila"></a>
+            </div>
+            <div class="project-info">
+              <h4 class="project-h4 subtitle-1">Desenvolvedor Front End e Designer</h4>
+
+            <ul class="project-tags tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>PHP</li>
+            </ul>
+
+            <p class="project-p body-1">O site institucional do Curso Áquila foi o primeiro projeto real na qual eu trabalhei, o confeccionei do zero desde a User  Interface até o deploy na hospedagem. Nele eu aprendi o quanto um código mais organizado possível ajuda no fluxo de desenvolvimento e nas refatorações.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="img-container">
+              <h3 class="subtitle-4 project-h3">Bikcraft</h3>
+              <a href="https://joaovitorkilson.github.io/bikcraft/" target="_blank"><img src="./img/projects/bikcraft.png" alt="print curso áquila"></a>
+            </div>
+            <div class="project-info">
+              <h4 class="project-h4 subtitle-1">Desenvolvedor Front End e Designer</h4>
+
+            <ul class="project-tags tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+
+            <p class="project-p body-1">O site da Bikcraft foi um projeto desenvolvido durante os cursos de User Interface e desenvolvimento Web da Origamid. Conceitos como responsividade, acessibilidade e otimização foram bem aplicados a este projeto.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+  
+      </section>
     </main>
 
 
-    <section id="experiencia" aria-label="Experiência" class="experiencia">
-        <h2 class="subtitulo">
-            &lt;experiência&gt;
-        </h2>
-
-        <div class="container experiencia">
-            <div class="descricao">
-                <p class="texto-inicial">
-                    Desenvolvo projetos como o site institucional do Curso Áquila utilizando <strong>HTML, CSS</strong> e <strong>JavaScript</strong>. Eu entrego o site totalmente gerenciável com o CMS <strong>Wordpress.</strong>
-                </p>
-
-                <div>
-                    <div class="empresa">
-                        <span class="empresa-ano">2022</span>
-                        <h3 class="empresa-titulo">Curso Áquila</h3>
-                        <span class="empresa-titulo">Desenvolvedor Frond End e Designer</span>
-                        <p>
-                            O site institucional do Curso Áquila foi o primeiro projeto real na qual eu trabalhei, o confeccionei do zero desde a User Interface até o deploy na hospedagem. Nele eu aprendi o quanto um código mais organizado possível ajuda no fluxo de desenvolvimento e nas refatorações, além de possibilitar uma facilidade nas alterações posteriores. 
-                            <a href="https://www.aquilacursobq.com.br/" target="_blank">Confira aqui</a>
-                        </p>
-                        
-
-                        <ul class="empresa-habilidades">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>UI Design</li>
-         
-                        </ul>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="formacao" id="formacao" aria-label="Formação">
-        <h2 class="subtitulo">&lt;Certificações&gt;</h2>
-        <div class="formacao-container container">
-            
-            <div class="formacao-conteudo">
-                <p class="texto-inicial">
-                    Minha mais recente certificação foi o <strong>Curso de Javascript es6+</strong>
-                </p>
-                <ul class="faculdade-lista">
-                    <li class="faculdade">
-                        <span class="faculdade-tipo">74 Horas</span>
-                        <h3 class="faculdade-curso">JavaScript Completo es6+</h3>
-                        <span class="faculdade-instituicao">Origamid</span>
-                    </li>
-                    <li class="faculdade">
-                        <span class="faculdade-tipo">46 Horas</span>
-                        <h3 class="faculdade-curso">HTML e CSS para Iniciantes</h3>
-                        <span class="faculdade-instituicao">Origamid</span>
-                    </li>
-                    
-                    <li class="faculdade">
-                        <span class="faculdade-tipo">34 Horas</span>
-                        <h3 class="faculdade-curso">UI Design para Iniciantes</h3>
-                        <span class="faculdade-instituicao">Origamid</span>
-                    </li>
-                </ul>
-
-                <div class="formacao-extra">
-                    
-                    <div class="idiomas">
-                        <h3>Idiomas</h3>
-                        <ul>
-                            <li>Inglês <span>/ Intermediário</span>/<a href="https://www.efset.org/cert/e3kQ9C" target="_blank">  Certificação</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contato" class="footer">
-        <div class="footer-container container">
-            <p class="footer-texto">
-                Estou disponível para novos projetos e ofertas de trabalho, entre em contato comigo para tomarmos um café ☕
-            </p>
-
-            <ul class="footer-contato">
-                <li>vitorkilson@gmail.com</li>
-                <li>(32) 9 9931-8584</li>
-                <li><a href="#">@vitorkilson</a></li>
-            </ul>
-            <p class="footer-copy">Developed by Vitor kilson. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-
+    <script src="./js/script.js" type="module"></script>
+  </body>
 </html>

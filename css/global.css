@@ -1,62 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
 body {
-    font-family: 'Spartan', sans-serif;
-    margin: 0px;
-    color: #141414;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin: 0px;
-}
-
-ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 .container {
-    max-width: 1200px;
-    padding: 40px 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    
-}
-
-.subtitulo {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'JetBrains Mono', sans-serif;
-    font-size: 6rem;
-    
-    
-}
-.texto-inicial {
-    font-size: 1.5rem;
-    line-height: 1.33;
-    margin-bottom: 60px;
-    max-width: 50ch;
-    color: #525252;
-}
-@media (max-width: 800px) {
-    .subtitulo {
-        font-size: 4rem;
-    }
-}
-@media (max-width: 400px) {
-    .subtitulo {
-        font-size: 2rem;
-        text-align: center;
-    }
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  
 }

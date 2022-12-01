@@ -1,6 +1,18 @@
+
+/* sections */
+
+@import './sections/introduction.css';
+@import './sections/projects.css';
+
+
+
+
+/* global */
+
 @import './global.css';
-@import './header.css';
-@import './introducao.css';
-@import './experiencia.css';
-@import './formacao.css';
-@import './footer.css';
+
+
+/* utils */
+
+@import './utils/fonts.css';
+@import './utils/colors.css';
