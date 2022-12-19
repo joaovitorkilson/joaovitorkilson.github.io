@@ -1,18 +1,13 @@
-
-/* sections */
-
-@import './sections/introduction.css';
-@import './sections/projects.css';
+@import 'global.css';
 
 
-
-
-/* global */
-
-@import './global.css';
-
-
-/* utils */
-
+@import './utils/color.css';
 @import './utils/fonts.css';
-@import './utils/colors.css';
+
+
+@import './sections/header.css';
+@import './sections/inicio.css';
+
+
+
+@import './components/button.css'

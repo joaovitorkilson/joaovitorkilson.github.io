@@ -4,114 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitor Kilson - Desenvolvedor Web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@100;300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-
+    <title>Vitor Kilson - Desenvolvedor Web</title>
   </head>
   <body>
     <header>
-      
-    <section class="introduction">
-      <div class="container">
-        <div class="header">
-          <h1 class="name-logo">Vitor Kilson</h1>
-  
-          <nav>
-            <ul class="header-menu subtitle-3">
-              <li><a href="">Projetos</a></li>
-              <li><a href="">Cursos</a></li>
-              <li><a href="">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="introduction-content">
-          <div class="introduction-image">
-            
-            <picture>
-              <source media="(max-width: 800px)" srcset="./img/introduction/vitor-sm.svg">
-              <source media="(max-width: 1000px)" srcset="./img/introduction/vitor-medium.svg">
-              <img src="./img/introduction/vitor.svg" alt="Ilustração homem de boné dando tchau">
-            </picture>
-          </div>
-          
-          <div class="introduction-info">
-            <h1 class="introduction-h1 title-1">Desenvolvedor<br> Full Stack &<br> UI Designer</h1>
-
-            <ul class="button introduction-button">
-              <li><a href="https://www.linkedin.com/in/joaovitorkilson/" target="_blank" id="linkedin">Linkedin</a></li>
-              <li> <a href="https://github.com/joaovitorkilson" target="_blank" id="github">Github</a></li>
-            </ul>
-
-          </div>
-
-        </div>
-
+      <div class="header-menu">
+        <h1 class="title-2">Vitor Kilson</h1>
+        <nav class="header-menu-list">
+          <ul class="font-list-item">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Tecnologias</a></li>
+          </ul>
+        </nav>
+        <button class="button-menu">Quero um Site</button>
       </div>
-    </section>
-
     </header>
 
-
     <main>
-      <section id="projects">
+      <section id="inicio">
+        <div class="inicio-container">
+          <div class="inicio-content">
+            <h1 class="title-1">
+              Desenvolvedor <span id="detail">fullstack</span> &
+              <span id="detail">ui designer</span>
+            </h1>
+            <p class="description">
+              Front End developer, UI Designer, estudante de Back End development
+              em Nodejs e PHP.
+            </p>
 
-        <div class="container">
-          <div class="projects-content">  
-            <h2 class="title-2 projects-h2"> &#60;projetos&#62; </h2>
-    
-            <p class="projects-p subtitle-4">Desenvolvo projetos como o site institucional do Curso Áquila utilizando <strong>HTML, CSS e JavaScript</strong>. Eu entrego o site totalmente gerenciável com o <strong>CMS Wordpress</strong>.</p>
-
-        </div>
-
-        <div class="projects-cards">
-          <div class="project">
-            <div class="img-container">
-              <h3 class="subtitle-4 project-h3">Curso Áquila</h3>
-              <a href="https://www.aquilacursobq.com.br/" target="_blank"><img src="./img/projects/aquila.png" alt="print curso áquila"></a>
-            </div>
-            <div class="project-info">
-              <h4 class="project-h4 subtitle-1">Desenvolvedor Front End e Designer</h4>
-
-            <ul class="project-tags tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>PHP</li>
+            <ul class="inicio-buttons font-list-item">
+              <li><a class="button" target="_blank" href="https://github.com/joaovitorkilson">Git Hub</a></li>
+              <li><a class="button" target="_blank" href="https://www.linkedin.com/in/joaovitorkilson/">Linkedin</a></li>
             </ul>
-
-            <p class="project-p body-1">O site institucional do Curso Áquila foi o primeiro projeto real na qual eu trabalhei, o confeccionei do zero desde a User  Interface até o deploy na hospedagem. Nele eu aprendi o quanto um código mais organizado possível ajuda no fluxo de desenvolvimento e nas refatorações.</p>
-            </div>
           </div>
-
-          <div class="project">
-            <div class="img-container">
-              <h3 class="subtitle-4 project-h3">Bikcraft</h3>
-              <a href="https://joaovitorkilson.github.io/bikcraft/" target="_blank"><img src="./img/projects/bikcraft.png" alt="print curso áquila"></a>
-            </div>
-            <div class="project-info">
-              <h4 class="project-h4 subtitle-1">Desenvolvedor Front End e Designer</h4>
-
-            <ul class="project-tags tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-            </ul>
-
-            <p class="project-p body-1">O site da Bikcraft foi um projeto desenvolvido durante os cursos de User Interface e desenvolvimento Web da Origamid. Conceitos como responsividade, acessibilidade e otimização foram bem aplicados a este projeto.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>  
   
+          <div class="container-img">
+            <img src="img/inicio/model-site.png" alt="Fotos do site curso áquila">
+          </div>
+        </div>
+
+
       </section>
     </main>
-
-
-    <script src="./js/script.js" type="module"></script>
   </body>
 </html>

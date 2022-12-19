@@ -1,0 +1,33 @@
+.button-menu {
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: var(--title-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: .5s;
+  
+}
+.button {
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: var(--title-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+
+
+
+}
+
+.inicio-buttons li {
+  transition: .5s;
+}
+
+.button-menu:hover,
+.inicio-buttons li:hover {
+  background: var(--detail-color);
+  transform:scale(1.1);
+}
+
+

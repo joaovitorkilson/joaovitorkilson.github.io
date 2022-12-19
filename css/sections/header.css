@@ -1,0 +1,30 @@
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header-menu-list ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.header-menu-list ul li {
+  
+  text-decoration: none;
+}
+.header-menu-list ul li a {
+  transition: .3s;
+}
+
+.header-menu-list ul li a:hover {
+  color: var(--detail-color);
+}
+
+@media (max-width: 950px) {
+  .header-menu-list, .button-menu {
+    display: none;
+  }
+}
