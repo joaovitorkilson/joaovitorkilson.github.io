@@ -1,75 +1,148 @@
 :root {
-  --font-1: 'Roboto', sans-serif;
-  --font-2: 'Poppins', sans-serif;
+  --font-1: 'Poppins', sans-serif;
+  --font-2: 'Roboto', sans-serif;
 }
-
-
-
-.title-2 {
-  font-family: var(--font-2);
+.logo {
+  font-family: var(--font-1);
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 38px;
   color: var(--title-color);
-
 }
 
 .title-1 {
   font-family: var(--font-1);
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 75px;
+  font-weight: 400;
+  font-size: 58px;
+  letter-spacing: -0.5px;
+  line-height: 72px;
   color: var(--title-color);
-  margin: 0;
   text-transform: uppercase;
+
 }
+
 #detail {
-  background: var(--primary-gradient);
-  /* background: linear-gradient(90deg, #AE7DEF -1.67%, #8E4AE6 100%); */
+  color: var(--color-gradient);
+  background: linear-gradient(180deg, #542FA9 0%, #542FA9 0.01%, #7333B7 50.21%, #8D36C3 91.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  white-space: nowrap;
+  -text-fill-color: transparent;
 
 }
 
-.description {
+.title-2 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 46px;
+  letter-spacing: 0px;
+  line-height: 57px;
+}
+
+.title-3 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 33px;
+  letter-spacing: 0.25px;
+  line-height: 41px;
+}
+
+.title-4 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: 0px;
+  line-height: 30px;
+}
+
+.title-5 {
   font-family: var(--font-1);
   font-weight: 500;
-  color: var(--text-color);
-  font-size: 1rem;
-  margin: 0;
+  font-size: 19px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+}
+
+.subtitle-1 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  line-height: 20px;
+  color: #ccc;
+
+}
+
+
+.subtitle-2 {
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  line-height: 17px;
+}
+
+.body-1 {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+}
+.body-2 {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.25px;
   line-height: 18px;
 }
 
+.body-3 {
+  font-family: var(--font-2);
+  font-weight: 500;   
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+}
 
-.font-list-item a {
-  font-family: var(--font-1);
-  font-weight: 400;
-  margin: 0;
-  font-size: 1rem;
-  line-height: 19px;
-  color: var(--title-color);
-  text-decoration: none;
+.button {
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.45px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 
 
+/* QUERIES */
 
-
-
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .title-1 {
-
     font-size: 3rem;
     line-height: 57px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .title-1 {
-
     font-size: 2rem;
-    line-height: 40px;
+    line-height: 38px;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 400px) {
+
+.body-1 {
+
+  font-size: 0.875rem;
+  line-height: 21px;
+  
   }
 }

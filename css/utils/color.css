@@ -3,9 +3,12 @@
   --primary-color: #140B40;
   --primary-gradient: linear-gradient(180deg, #542FA9 0%, #542FA9 0.01%, #7333B7 50.21%, #8D36C3 91.15%);
   --secondary-gradient: linear-gradient(180deg, #11093C 0%, #11093C 0.01%, #2B1659 50.21%, #432276 91.15%);
+  --tertiary-gradient: linear-gradient(90deg, #542FA9 0%, #542FA9 0.01%, #7333B7 49.66%, #8D36C3 90.16%);
   --text-color: #CCCCCC;
   --title-color: #FFFFFF;
   --detail-color: #9A05F9;
+
+  
 
 }
 

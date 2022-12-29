@@ -6,15 +6,17 @@
   padding: 30px 0;
 }
 
+.menu-item a {
+    color: var(--title-color);
+    text-decoration: none;
+  }
+
 .header-menu-list ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
-.header-menu-list ul li {
-  
-  text-decoration: none;
-}
+
 .header-menu-list ul li a {
   transition: .3s;
 }
@@ -23,7 +25,7 @@
   color: var(--detail-color);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
   .header-menu-list, .button-menu {
     display: none;
   }

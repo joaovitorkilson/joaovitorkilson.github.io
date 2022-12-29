@@ -1,0 +1,137 @@
+#start {
+  height: calc(100vh - 140px);
+  display: flex;
+  position: relative;
+
+}
+
+.title-site {
+  margin: 0 0 30px 0;
+}
+
+.description-site {
+  margin: 0 0 30px 0;
+}
+
+.start-container {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-around;
+
+}
+
+.start-container::after {
+  content: '';
+  background: #9A50C6;
+  filter: blur(125px);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 200px;
+  right: -90px;
+  z-index: -2;
+
+}
+
+.start-container::before {
+  content: '';
+  background: url(/img/start/arrow-down.svg) no-repeat;
+  width: 20px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.start-content {
+  display: flex;
+  flex-direction: column;
+
+}
+.start-buttons {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+}
+.start-buttons a {
+  text-decoration: none;
+}
+
+.start-container-img img {
+  width: fit-content;
+
+}
+
+ @media (max-width: 1500px) {
+  .start-container::after {
+    display: none;
+  }
+} 
+
+
+@media (max-width: 1200px) {
+
+  .start-container-img {
+    width: 800px;
+    display: contents;
+    
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .start-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .start-buttons {
+    justify-content: center;
+  }
+
+  .start-container-img {
+    display: block;
+    justify-self: center;
+  }
+  .start-container-img img{
+    margin-top: 40px;
+    width: 500px;
+  }
+  #start {
+    display: block;
+  }
+  .start-container::before {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .start-container-img {
+    width: auto;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .start-container {
+    margin-top: 60px;
+    place-self: start;
+  }
+  .start-container-img img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .start-container-img img {
+    max-width: 200px;
+  }
+}

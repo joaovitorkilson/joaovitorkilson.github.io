@@ -1,33 +1,51 @@
-.button-menu {
+
+ .button-menu {
   padding: 10px 20px;
-  background: var(--primary-gradient);
-  color: var(--title-color);
-  border-radius: 4px;
-  cursor: pointer;
+  background-image: linear-gradient(to right, #542FA9 0%, #542FA9 0.01%, #7333B7 50.21%, #8D36C3 91.15%);
   border: none;
-  transition: .5s;
-  
-}
-.button {
-  padding: 10px 20px;
-  background: var(--primary-gradient);
   color: var(--title-color);
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
-
-
+  
+  background-size: 300% 100%;
+ 
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 
 }
+.button-menu:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+} 
 
-.inicio-buttons li {
-  transition: .5s;
+
+/* 
+
+ .button-menu {
+  
+ 
+
+ 
+
+
+  background-size: 300% 100%;
+ 
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
 }
-
-.button-menu:hover,
-.inicio-buttons li:hover {
-  background: var(--detail-color);
-  transform:scale(1.1);
-}
-
-
+.button-menu:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+} 
+ */
