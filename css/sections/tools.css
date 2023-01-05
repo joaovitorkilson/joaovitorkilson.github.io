@@ -1,0 +1,28 @@
+#tools {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+
+.tools-cards {
+  background: var(--primary-gradient);
+  border-radius: 120px 5px;
+  gap: 40px;
+  padding: 40px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+@media (max-width: 600px) {
+  .tools-cards {
+    padding: 40px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 20px;
+    border-radius: 5px;
+    justify-content: left;
+
+  }
+}
