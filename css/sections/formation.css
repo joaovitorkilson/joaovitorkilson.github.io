@@ -1,0 +1,120 @@
+
+.formation-container {
+  margin-top: 60px;
+  margin-bottom: 120px;
+
+}
+.galery-certifications {
+  color: var(--title-color);
+}
+
+.courses-category {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.course-category-img {
+  width: 260px;
+  position: relative;
+  transition: .3s;
+}
+.course-category-img img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.course-category-img:hover {
+  transform: scale(1.1);
+
+}
+.course-category-imgs {
+  display: flex;
+  gap: 40px;
+}
+
+
+
+#javascript::after {
+  content: 'JavaScript es6+';
+  margin: 10px 0;
+  position: absolute;
+  text-align: center;
+  left:0;
+  right: 0;
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  
+}
+
+
+#typescript::after {
+  content: 'TypeScript';
+  margin: 10px 0;
+  position: absolute;
+  text-align: center;
+  left:0;
+  right: 0;
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  
+}
+
+#web-design::after {
+  content: 'UI Design';
+  margin: 10px 0;
+  position: absolute;
+  text-align: center;
+  left:0;
+  right: 0;
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  
+}
+
+#english::after {
+  content: 'English B2 Upper Intermediate';
+  margin: 10px 0;
+  position: absolute;
+  text-align: center;
+  left:0;
+  right: 0;
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  
+}
+
+@media (max-width: 1000px) {
+  .courses-category {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-category-imgs {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .course-category-img {
+    width: 200px;
+    
+  }
+}

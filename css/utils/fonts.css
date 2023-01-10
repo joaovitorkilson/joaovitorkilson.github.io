@@ -114,9 +114,20 @@
     text-transform: uppercase;
 }
 
+.title-detail {
+  font-family: var(--font-2);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.45px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 
 
 /* QUERIES */
+
+
 
 @media (max-width: 900px) {
   .title-1 {
@@ -144,5 +155,9 @@
   font-size: 0.875rem;
   line-height: 21px;
   
+  }
+  .title-3 {
+    font-size: 1.6rem;
+    line-height: 41px;
   }
 }

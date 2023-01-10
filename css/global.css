@@ -1,12 +1,13 @@
-body {
 
+body {
   padding: 0 20px;
   background: var(--primary-color);
 }
 header,
 #start,
 #about,
-#tools {
+#tools,
+#formation {
   max-width: 1320px;
   margin: 0 auto;
 }
