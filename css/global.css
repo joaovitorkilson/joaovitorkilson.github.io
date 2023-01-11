@@ -1,15 +1,77 @@
 
 body {
-  padding: 0 20px;
   background: var(--primary-color);
+  margin: 0;
 }
+
+main {
+  overflow: hidden;
+}
+main::after {
+  content: '';
+  background: #9A50C6;
+  filter: blur(125px);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  opacity: .5;
+  bottom: 200px;
+  right: 0px;
+  z-index: -2;
+
+}
+
+main::before {
+  content: url('../img/global/spring.svg');
+  opacity: .5;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 150px;
+  left: -150px;
+  z-index: -3;
+
+}
+
+/* 
+body::after {
+  content: '';
+  background: #9A50C6;
+  filter: blur(125px);
+  width: 200px;
+  height: 300px;
+  position: fixed;
+  bottom: 200px;
+  left: -90px;
+  
+
+}
+
+body::before {
+  content: '';
+  background: #9A50C6;
+  filter: blur(125px);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 200px;
+  right: -90px;
+  
+
+} */
+
+
+
+
 header,
 #start,
 #about,
 #tools,
-#formation {
+#formation,
+#contact {
   max-width: 1320px;
   margin: 0 auto;
+  padding: 0 5px 0 5px;
 }
 
 .section-header {

@@ -2,7 +2,7 @@
   height: calc(100vh - 140px);
   display: flex;
   position: relative;
-
+  overflow-x: hidden;
 }
 
 .title-site {
@@ -11,6 +11,7 @@
 
 .description-site {
   margin: 0 0 30px 0;
+  
 }
 
 .start-container {
@@ -22,18 +23,6 @@
 
 }
 
-.start-container::after {
-  content: '';
-  background: #9A50C6;
-  filter: blur(125px);
-  width: 200px;
-  height: 300px;
-  position: absolute;
-  bottom: 200px;
-  right: -90px;
-  z-index: -2;
-
-}
 
 .start-container::before {
   content: '';
@@ -68,11 +57,6 @@
 
 }
 
- @media (max-width: 1500px) {
-  .start-container::after {
-    display: none;
-  }
-} 
 
 
 @media (max-width: 1200px) {

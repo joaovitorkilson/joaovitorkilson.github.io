@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -71,7 +71,7 @@
 
               <div class="about-me">
                 <span class="title-3 hello">Olá,</span>
-                <p class="body-1 text-about-me">meu nome é João Vitor Kilson e sou desenvolvedor web, faço projetos tanto no frontend utilizando HTML, CSS e JS quanto no backend utilizando PHP e Node.js. Além disso adoro brincar com UI/UX para entregar essas tecnologias da maneira mais bonita e agradável possível. No momento meu foco está em estudar conceitos mais avançados no backend para poder construir aplicações mais seguras e com código limpo. Tenho inglês intermediário B2 e trabalho há dois anos na seção de atendimento ao usuário de TI na EPCAR ✈️ (Escola Preparatória de Cadetes do Ar).</p>
+                <p class="body-1 text-about-me">meu nome é João Vitor Kilson e sou desenvolvedor web, faço projetos tanto no frontend utilizando HTML, CSS e JS quanto no backend utilizando PHP e Node.js. Além disso adoro brincar com UI/UX para entregar essas tecnologias da maneira mais bonita e agradável possível. No momento meu foco está em estudar conceitos mais avançados no backend para poder construir aplicações mais seguras e com código limpo. Tenho inglês intermediário B2 e trabalho há dois anos na Seção de Atendimento Ao Usuário de TI na EPCAR ✈️ (Escola Preparatória de Cadetes do Ar).</p>
               </div>
               
               <div class="about-info">
@@ -181,8 +181,73 @@
           </div>
         </section>
 
+        <section id="contact">
+          <div class="contact-container">
+            <div class="section-header">
+              <h2 class="title-detail">contato</h2>
+              <h3 class="title-2">Tem algum projeto em mente?</br> <span id="detail">Entre em contato comigo</span></h3>
+            </div>
+
+            <div class="form-container">
+              <div class="form-info">
+                
+                <div class="form-info-content">
+                    <img src="./img/contact/email.svg" alt="">
+                    <div class="form-info-content-item">
+                      <h5 class="body-3">Email:</h5>
+                      <p class="body-2">joaovitorkilson@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="form-info-content">
+                  <img src="./img/contact/cell.svg" alt="">
+                    <div class="form-info-content-item">
+                      <h5 class="body-3">Número:</h5>
+                      <p class="body-2">(32) 9 9931-8584</p>
+                    </div>
+                </div>
+
+                <div class="form-info-content">
+                    <img src="./img/contact/linkedin.svg" alt="">
+                    <div class="form-info-content-item">
+                      <h5 class="body-3">Linkedin:</h5>
+                      <p class="body-2">linkedin.com/in/joaovitorkilson/</p>
+                    </div>
+                </div>
+              </div>
+
+              
+                <form action="" method="post" class="form">
+
+                  <input type="text" id="name" class="input-items body-1" placeholder="Seu Nome">
+                  <input type="email" name="email" id="email" class="input-items body-1" placeholder="Seu Email">
+                  <input type="text" name="subject" id="subject" class="input-items body-1" placeholder="Assunto">
+  
+                  <textarea name="message" id="message" class="input-items body-1" placeholder="Mensagem"></textarea>
+                  <button class="button button-form" id="form-submit" type="submit">Enviar</button>
+                </form>
+              
+            </div>
+
+
+          </div>
+        </section>
 
     </main>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <p class="footer-description title-4">Estou disponível para novos projetos, entre em contato comigo para tomarmos um café. ☕</p>
+
+        <ul class="links-contact">
+          <li class="title-4"><img src="./img/contact/email-white.svg" alt="">joaovitorkilson@gmail.com</li>
+          <li class="title-4"><img src="./img/contact/cell-white.svg" alt="">(32) 9 9931-8584</li>
+          <li class="title-4"><img src="./img/contact/instagram.svg" alt="">@vitorkilson</li>
+        </ul>
+  
+      </div>
+    </footer>
+
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
