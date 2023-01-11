@@ -33,17 +33,19 @@ main::before {
 
 }
 
-/* 
+
 body::after {
   content: '';
   background: #9A50C6;
   filter: blur(125px);
+  opacity: .5;
+
   width: 200px;
   height: 300px;
-  position: fixed;
-  bottom: 200px;
-  left: -90px;
-  
+  position: absolute;
+  top: 1500px;
+  left: -10px;
+  z-index: -2
 
 }
 
@@ -51,14 +53,16 @@ body::before {
   content: '';
   background: #9A50C6;
   filter: blur(125px);
+  opacity: .5;
   width: 200px;
   height: 300px;
   position: absolute;
-  bottom: 200px;
-  right: -90px;
+  top: 3600px;
+  right: 0;
+  z-index: -2
   
 
-} */
+} 
 
 
 
@@ -71,7 +75,7 @@ header,
 #contact {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 5px 0 5px;
+  padding: 0 20px 0 20px;
 }
 
 .section-header {

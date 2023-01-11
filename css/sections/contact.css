@@ -107,7 +107,7 @@
   border: 1px solid #fff;
   border-radius: 4px;
   padding: 30px;
-  -webkit-appearance: none;
+ 
   color: var(--text-color) !important;
 }
 
