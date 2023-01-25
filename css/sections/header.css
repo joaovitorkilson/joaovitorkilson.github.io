@@ -29,4 +29,8 @@
   .header-menu-list, .button-menu {
     display: none;
   }
+
+  .start-content {
+    align-items: center;
+  }
 }

@@ -61,16 +61,17 @@
   font-size: 19px;
   letter-spacing: 0.15px;
   line-height: 25px;
+  
 }
 
 .subtitle-1 {
   font-family: var(--font-1);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.15px;
-  line-height: 20px;
+  line-height: 24px;
   color: #ccc;
-
+  max-width: 50ch;
 }
 
 
@@ -133,6 +134,33 @@
   .title-1 {
     font-size: 3rem;
     line-height: 57px;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-5 {
+    
+    font-size: 16px;
+    line-height: 24px;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .title-5 {
+    
+    font-size: 12px;
+    line-height: 16.8px;
+    
+  }
+}
+
+@media (max-width: 520px) {
+  .title-5 {
+    
+    font-size: 12px;
+    line-height: 15px;
+    
   }
 }
 

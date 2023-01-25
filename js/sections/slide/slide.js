@@ -7,6 +7,8 @@ export class Slide {
     this.dist = { finalPosition: 0, startX: 0, movement: 0 };
     this.activeClass = 'active';
     this.changeEvent = new Event('changeEvent');
+    this.slideActive = ''
+
   }
 
 
@@ -17,6 +19,7 @@ export class Slide {
   moveSlide(distX) {
     this.dist.movePosition = distX;
     this.slide.style.transform = `translate3d(${distX}px, 0, 0)`;
+    
   } 
 
   updatePosition(clientX) {
@@ -45,6 +48,7 @@ export class Slide {
     const pointerPosition = (event.type === 'mousemove') ? event.clientX : event.changedTouches[0].clientX;
     const finalPosition = this.updatePosition(pointerPosition);
     this.moveSlide(finalPosition);
+    
 
   }
 
@@ -70,10 +74,10 @@ export class Slide {
 
   addSlideEvents() {
     this.wrapper.addEventListener("mousedown", this.onStart);
-    this.wrapper.addEventListener("mouseup", this.onEnd);
+    window.addEventListener("mouseup", this.onEnd);
 
     this.wrapper.addEventListener("touchstart", this.onStart);
-    this.wrapper.addEventListener("touchend", this.onEnd);
+    window.addEventListener("touchend", this.onEnd);
 
 
   }
@@ -83,6 +87,7 @@ export class Slide {
   // Slides config
 
   slidePosition(slide) {
+    
     const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
     return -(slide.offsetLeft - margin);
   }
@@ -118,6 +123,8 @@ export class Slide {
     this.dist.finalPosition = activeSlide.position;
     this.changeActiveClass();
     this.wrapper.dispatchEvent(this.changeEvent);
+
+    
   }
 
   changeActiveClass() {
@@ -125,6 +132,7 @@ export class Slide {
       item.element.classList.remove(this.activeClass);
     })
     this.slideArray[this.index.active].element.classList.add(this.activeClass);
+    
   }
 
 
@@ -170,6 +178,26 @@ export class Slide {
     this.activePrevSlide = this.activePrevSlide.bind(this);
     this.activeNextSlide = this.activeNextSlide.bind(this);
   }
+  hoverImg() {
+ 
+    function handleHover(event) {
+      event.currentTarget.classList.add('activeHover')
+    }
+    function handleOut(event) {
+      event.currentTarget.classList.remove('activeHover')
+
+    }
+
+    this.slideArray.forEach(item => {
+      const element = item.element.lastElementChild
+      element.addEventListener('mouseover', handleHover)
+      element.addEventListener('mouseleave', handleOut)
+      
+
+    })
+
+    
+  }
 
   init() {
     this.bindEvents();
@@ -177,6 +205,8 @@ export class Slide {
     this.addResizeEvent();
     this.slidesConfig()
     this.changeSlide(0);
+    this.hoverImg();
+
     return this;
   }
 }
