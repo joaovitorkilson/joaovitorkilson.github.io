@@ -34,7 +34,9 @@
   gap: 40px;
 }
 
-
+.certificate-link {
+  color: var(--title-color);
+}
 
 #javascript::after {
   content: 'JavaScript es6+';
