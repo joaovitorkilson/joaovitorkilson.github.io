@@ -7,7 +7,7 @@
   color: var(--title-color);
   border-radius: 4px;
   cursor: pointer;
-  
+  text-decoration: none;
   background-size: 300% 100%;
  
   -moz-transition: all .3s ease-in-out;

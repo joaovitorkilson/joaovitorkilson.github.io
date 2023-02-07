@@ -1,9 +1,19 @@
 
+main {
+  padding-top: 140px;
+}
+
 .header-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, .7);
 }
 
 .menu-item a {
